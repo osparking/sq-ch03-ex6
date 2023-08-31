@@ -9,7 +9,13 @@ import lombok.ToString;
 @Getter
 @ToString
 public class Person {
-	private String name = "철수";
+	private String name;
 	private Parrot parrot;
-	
+
+	public Person(Parrot parrot) {
+		super();
+		this.name = "철수";
+		this.parrot = parrot;
+	}
+
 }
